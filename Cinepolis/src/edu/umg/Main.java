@@ -1,5 +1,6 @@
 package edu.umg;
 
+import edu.umg.model.Cartelera;
 import edu.umg.model.Movie;
 import java.util.Scanner;
 
@@ -10,17 +11,22 @@ public class Main {
         // parte 1: crear la interfaz grafica de usuario
         System.out.println("Ingrese el nombre de la pelicula 1 ");
         Scanner scanner = new Scanner(System.in);
-        String nombrePelicula = scanner.nextLine();
-        System.out.println("Ingrese el rating de la pelicula 1 ");
-        String ratingPelicula = scanner.nextLine();
 
+        String nombrePelicula = scanner.nextLine();
         // crear 2 objetos que representen a peliculas: Joker y Rapido y Furioso
-        Movie movieJoker = new Movie( nombrePelicula );
-        movieJoker.setRating(ratingPelicula);
+        Movie pelicula1 = new Movie( nombrePelicula );
+
 
         System.out.println("Ingrese el nombre de la pelicula 2 ");
         nombrePelicula = scanner.nextLine();
-        Movie movieRapidoFurioso = new Movie( nombrePelicula );
+        Movie pelicula2 = new Movie( nombrePelicula );
+
+        Cartelera carteleraPortales = new Cartelera("Portales z. 18");
+        carteleraPortales.agregarPeliculaAcartelera(pelicula1);
+        carteleraPortales.agregarPeliculaAcartelera(pelicula2);
+
+        carteleraPortales.modificarRatingDeUnaPelicula(1,"P16");
+
 
 
     }

@@ -2,7 +2,7 @@ package edu.umg.model;
 
 public class Movie {
     // propiedades
-    private String title;
+    public String title;
     private String rating;
 
     // constructor
@@ -16,6 +16,9 @@ public class Movie {
     // metodos
     public void setRating(String rating){
         this.rating = rating;
+    }
+    public String getRating(){
+        return this.rating;
     }
 
 
