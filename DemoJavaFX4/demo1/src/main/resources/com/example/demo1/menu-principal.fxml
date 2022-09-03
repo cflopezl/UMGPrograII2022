@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.controller.MenuPrincipalController">
+   <children>
+      <Label layoutX="64.0" layoutY="37.0" text="MENU PRINCIPAL">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="250.0" layoutY="79.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="210.0" layoutY="123.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="64.0" layoutY="37.0" mnemonicParsing="false" text="Button" />
+   </children>
+</Pane>
