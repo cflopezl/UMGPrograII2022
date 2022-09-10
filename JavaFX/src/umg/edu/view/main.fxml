@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1300.0" style="-fx-background-color: #001c55;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="umg.edu.controller.MainController">
+   <children>
+      <Pane prefHeight="650.0" prefWidth="190.0" style="-fx-background-color: #a6e1fa;">
+         <children>
+            <VBox alignment="CENTER" layoutX="16.0" layoutY="160.0" prefHeight="309.0" prefWidth="147.0" spacing="30.0" style="-fx-background-color: #a6e1fa;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="38.0" prefWidth="191.0" text="Menu Principal">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnUsuario" mnemonicParsing="false" onAction="#onClickMenu" prefHeight="25.0" prefWidth="114.0" text="Usuarios" />
+                  <Button fx:id="btnPeliculas" layoutX="10.0" layoutY="48.0" mnemonicParsing="false" onAction="#onClickMenu" prefHeight="25.0" prefWidth="114.0" text="Peliculas" />
+                  <Button fx:id="btnCartelera" layoutX="10.0" layoutY="73.0" mnemonicParsing="false" onAction="#onClickMenu" prefHeight="25.0" prefWidth="114.0" text="Cartelera" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane fx:id="panelCartelera" layoutX="187.0" prefHeight="650.0" prefWidth="1114.0" style="-fx-background-color: #550000;">
+          <children>
+              <Label text="CARTELERA" textFill="WHITE" />
+          </children>
+      </Pane>
+      <Pane fx:id="panelUsuario" layoutX="187.0" prefHeight="650.0" prefWidth="1114.0" style="-fx-background-color: #05668d;">
+         <children>
+            <Label text="USUARIOS" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane fx:id="panelPelicula" layoutX="187.0" prefHeight="650.0" prefWidth="1114.0" style="-fx-background-color: #001c55;">
+          <children>
+            <AnchorPane prefHeight="650.0" prefWidth="338.0" style="-fx-background-color: #0a2472;">
+               <children>
+                    <Label alignment="CENTER" layoutX="9.0" layoutY="125.0" prefHeight="30.0" prefWidth="323.0" style="-fx-background-color: #a6e1fa; -fx-background-radius: 10 10 10 10;" text="PELICULA" textFill="#3d35da">
+                     <font>
+                        <Font name="Arial" size="25.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="14.0" layoutY="202.0" prefHeight="117.0" prefWidth="80.0" spacing="15.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="100.0" text="Nombre" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="100.0" text="Rating" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="30.0" prefHeight="17.0" prefWidth="100.0" text="Duración" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="110.0" layoutY="202.0" prefHeight="117.0" prefWidth="212.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="txtNombre" />
+                        <TextField fx:id="txtRaiting" />
+                        <TextField fx:id="txtDuracion" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" layoutX="51.0" layoutY="362.0" prefHeight="56.0" prefWidth="241.0" spacing="10.0" style="-fx-background-color: #a6e1fa;">
+                     <children>
+                        <Button fx:id="btnAgregarPelicula" mnemonicParsing="false" onAction="#onClickAgregarPelicula" text="Agregar" />
+                        <Button mnemonicParsing="false" text="Modificar" />
+                        <Button mnemonicParsing="false" text="Borrar" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tvPeliculas" layoutX="432.0" layoutY="106.0" prefHeight="447.0" prefWidth="581.0">
+              <columns>
+                <TableColumn fx:id="tcId" prefWidth="55.0" text="ID" />
+                <TableColumn fx:id="tcNombre" prefWidth="313.0" text="NOMBRE" />
+                  <TableColumn fx:id="tcRating" prefWidth="99.0" text="RATING" />
+                  <TableColumn fx:id="tcDuracion" prefWidth="113.0" text="DURACIÓN" />
+              </columns>
+            </TableView>
+          </children>
+      </Pane>
+   </children>
+</AnchorPane>
