@@ -1,0 +1,11 @@
+
+†
+java:S1319	"kThe type of "vgPeliculas" should be an interface such as "List" rather than the implementation "ArrayList".(ö¼ì¨ùÿÿÿÿ
+r
+java:S1104	"WMake vgPeliculas a static final constant or non-public and provide accessors if needed.(ö¼ì¨ùÿÿÿÿ
+S
+java:S1444	"1Make this "public static vgPeliculas" field final(ö¼ì¨ùÿÿÿÿ8àÚ¯¾²0
+?
+java:S2386	"Make this member "protected".(ö¼ì¨ùÿÿÿÿ8ºÂ€æ·0
+W
+java:S1118":Add a private constructor to hide the implicit public one.(„û¼Œ8çÚ¯¾²0
