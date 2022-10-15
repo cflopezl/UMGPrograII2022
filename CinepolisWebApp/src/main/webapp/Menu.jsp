@@ -30,7 +30,7 @@
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">CINEPOLIS</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Cartelera</a></li>
+                <li><a href="Cartelera.jsp">Cartelera</a></li>
                 <li><a href="badges.html">Peliculas</a></li>
                 <li><a href="collapsible.html">Comida</a></li>
             </ul>

@@ -28,7 +28,7 @@
             <a href="#" class="brand-logo">Logo</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="sass.html">Agregar Pelicula</a></li>
-                <li><a href="badges.html">Listado de Peliculas</a></li>
+                <li><a href="ListadoPeliculas.jsp">Listado de Peliculas</a></li>
                 <li><a href="collapsible.html">Promociones</a></li>
             </ul>
         </div>
